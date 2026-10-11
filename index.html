@@ -1,0 +1,50 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterviewAI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>InterviewAI</h1>
+    <p>Practice smarter. Interview better.</p>
+  </header>
+
+  <main class="container">
+    <section class="card" id="setup">
+      <h2>Start a Mock Interview</h2>
+      <label for="role">Job Role</label>
+      <input id="role" placeholder="e.g. Software Developer">
+
+      <label for="level">Experience Level</label>
+      <select id="level">
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+
+      <button id="start">Start Interview</button>
+    </section>
+
+    <section class="card hidden" id="interview">
+      <p id="progress"></p>
+      <h2 id="question"></h2>
+      <textarea id="answer" rows="6" placeholder="Type your answer here"></textarea>
+      <button id="next">Submit Answer</button>
+    </section>
+
+    <section class="card hidden" id="results">
+      <h2>Interview Complete!</h2>
+      <p id="score"></p>
+      <div id="feedback"></div>
+      <button id="restart">Try Again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
